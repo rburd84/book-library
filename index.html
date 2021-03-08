@@ -9,6 +9,46 @@
   </head>
   <body>
     <h1>Book List</h1>
+    <button id="add-book">Add New Book</button>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="book-form" action="">
+          <label for="book-title">Title</label>
+          <input
+            type="text"
+            id="book-title"
+            name="book-title"
+            placeholder="Enter Book Title"
+          />
+          <br />
+          <label for="book-author">Author</label>
+          <input
+            type="text"
+            id="book-author"
+            name="book-author"
+            placeholder="Enter Book Author"
+          />
+          <br />
+          <label for="book-pages">Pages</label>
+          <input
+            type="text"
+            id="book-pages"
+            name="book-pages"
+            placeholder="Enter Book Pages"
+          />
+          <br />
+          <label for="book-read">Read</label>
+          <input
+            type="text"
+            id="has-read"
+            name="has-read"
+            placeholder="Has been completed"
+          />
+          <button class="submit-book" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
     <div class="books"></div>
     <script src="./book.js"></script>
   </body>
